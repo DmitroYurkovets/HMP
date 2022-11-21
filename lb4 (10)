@@ -1,0 +1,3 @@
+#Ранг матриці  
+rank = np.linalg.matrix_rank(A)  
+print(rank)  
