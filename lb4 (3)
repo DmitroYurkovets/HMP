@@ -1,0 +1,3 @@
+#Побудуємо діагональну матрицю на базі полученої діагоналі  
+m_diag_np = np.diag(np.diag(m_sqr_mx))  
+print(m_diag_np)  
