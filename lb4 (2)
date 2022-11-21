@@ -1,0 +1,6 @@
+#Побудуємо діагональ  
+m_sqr_mx = np.matrix('1 2 3; 4 5 6; 7 8 9')  
+diag = np.diag(m_sqr_mx)  
+print(diag)  
+
+  
