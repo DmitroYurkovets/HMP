@@ -1,0 +1,23 @@
+import math
+import matplotlib.pyplot as plt
+import numpy as np
+def f(x,y):
+    return x+math.sin(y/math.radians(180))
+x0 = 0.0
+b = 1.0
+h = 0.1
+x = np.arange(x0,b+h,h)
+n = len(x)-1
+y = np.empty(n+1)
+y[0] = 5.3 
+for i in range(n):
+    y[i+1]=y[i]+f(x[i],y[i])*h
+y_rounded=np.round_(y,4)
+print('x=',x,'\ny=',y_rounded)
+plt.plot(x, y,'o',x,y,'red')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title("Euler's method")
+plt.legend (['points','x+sin(y/pi)'])
+plt.grid()
+plt.show()
