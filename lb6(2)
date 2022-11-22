@@ -1,0 +1,9 @@
+#Перевірка
+f = lagrange(x,y)
+fig = plt.figure(figsize = (10,8))
+plt.plot(xnew, f(xnew), 'g', x, y, 'ro')
+plt.title('Lagrange Polynominal 2')
+plt.grid()
+plt.xlabel('x')
+plt.ylabel('y')
+plt.show()
