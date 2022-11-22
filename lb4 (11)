@@ -1,0 +1,9 @@
+#Матричний метод  
+A = np.matrix('3 -1 2; 1 4 -1; 2 3 1')  
+B = np.matrix('-4; 10; 8')  
+print('A=', A)  
+print('B=',B)  
+A_inv = np.linalg.inv(A)  
+print(A_inv)  
+X = A_inv.dot(B)  
+print('X=',X)  
